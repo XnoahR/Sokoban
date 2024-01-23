@@ -10,11 +10,6 @@ public class GameMaster : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        // if(gm == null){
-        //     gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
-        // }
-        // goalScript = GameObject.Find("Goal").GetComponent<GoalScript>();
-        //Access pause menu that inside Child
         pauseMenu = transform.GetChild(0).gameObject;
     }
 
@@ -25,10 +20,6 @@ public class GameMaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if(goalScript.isWin){
-        //     Debug.Log("You Win MASTER!");
-        //     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        // }
 
         //Reset current level
         if(Input.GetKeyDown(KeyCode.R)){
